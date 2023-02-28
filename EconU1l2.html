@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy Lesson 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        body {
+            font-family: var(--font-one);
+            font-size: 16px;
+            font-weight: 400;
+            background: #d7f1ff;
+            background-size: cover;
+        }   
+       /* h1, h2, h3, h4, h5, h6{
+            font-family: var(--font-two);
+        }
+
+        h1,
+        h2 {
+            font-weight: 700;
+        } */
+
+        /* top_content */
+        #setion1 {
+            background: #01495f;
+        }
+
+        #top_content_one {
+            /* background: url('./ECONS1U1L2Header1.png') no-repeat; */
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQfXMfeSgtomYJD25xknk1v7ZhrB-hJTooh2xoGVgIiN_CQA5CqePsbrwW0-UBGbf3INnIMLY5ywz5_CUVng4w3urEyQg=w3360-h1800') no-repeat;
+            background-size: cover;
+            background-position: left;
+            position: relative;
+            padding:90px;
+            box-shadow: -1px -8px 13px #8a4c5775;
+            -webkit-box-shadow: -1px -8px 13px #8a4c5775;
+            -moz-box-shadow: -1px -8px 13px #8a4c5775;
+            -o-box-shadow: -1px -8px 13px #8a4c5775;
+            /* padding-top: 200px; */
+            height: 550px;
+        }
+        #top2_content_one {
+            background-color:#fff;
+            padding: 40px;
+        }
+         #top3_content_one {
+            /* background: url('./ECONS1U1L2Sec2BGImage.png') no-repeat; */
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOTIZMZER12ilXoolkEm3UUSWw7UQ8RdrBdQPhGcdENkCE-hMcYrxfy6zrRbSbD7gnk6_mIQjgQXFXYra-P7sSNB63QxYg=w1338-h1800') no-repeat;
+            background-size: cover;
+            background-position: left;
+            position: relative;
+            padding:50px;
+        }
+        #top4_content_one {
+            background-color:#a5d1e1;
+            padding: 40px;
+        }
+        #top5_content_one {
+            background-color:#fff;
+            padding: 40px;
+        }
+        #top11_content_one {
+            background-color:#014960;
+            padding: 40px;
+        }
+        #top12_content_one {
+            background-color:#fff;
+            padding: 40px;
+        }
+
+         #top20_content_one {
+            /* background: url('./ECONS1U1L2Image8.png') no-repeat; */
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOT0DGocDpObVgY3ee_y19p_pySpB1JsCTNgg2W7Y41aVz0XQOBkAA_z1Oy4vKmwnU9BLf7K4nYh-_EdT6j_smJ4DtQIIA=w1338-h1800') no-repeat;
+            background-size: cover;
+            background-position: left;
+            position: relative;
+            padding:50px;
+            height: 550px;
+            background-color: #fff;
+        }
+        
+        #top_content_one h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        #top_content_one h1 span{ display: block; }
+        #top_content_one h2{ font-weight: 500; font-size: 2.4rem; color: #fff; } 
+        #top_content_one p.text_head span{ 
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #fff;
+            margin-top: 60px;
+          
+        }
+        #top_content_one p.list_text{
+            font-size: 1.5rem; 
+            font-weight: 500;
+            color: #fff;
+        }
+        #top_content_one p.list_text span{
+            display: block;
+        }
+        .section1-text-title{
+          font-size:35px;
+          color: black;
+          font-weight: 500;
+          text-align: right;
+        }
+        .sec2-text-title{
+          font-size: 30px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #01495f;
+        }
+        .sec2-text-sub{
+          font-size: 20px;
+        }
+        .sec3-bg-text-title{
+          background-color: #1d5970;
+          padding:20px;
+        }
+        .sec3-bg2-text-title{
+          background-color: #3d7185;
+          padding:20px;
+        }
+        .sec3-bg-sub-text-title{
+          background-color: #386c82;
+          padding:20px;
+          height: 490px;
+        }
+        .sec3-bg-sub2-text-title{
+          background-color: #476875;
+          padding:20px;
+          height: 490px;
+        }
+        .sec3-text-title{
+          font-size: 30px;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .sec3-title-text-sub{
+          color: #fff;
+          font-size: 20px;
+        }
+        .sec3-title2-text-sub{
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+        }
+        .sec3-text-list{
+          list-style-type: square;
+          font-size:18px;
+          color:#fff;
+        }
+        .sec3-text-list li {
+          padding-top: 10px;
+        }
+        .sec4-text-title{
+          font-size: 30px;
+          color:black;
+        }
+        .sec4-text-sub{
+          font-size: 24px;
+        }
+        .sec7-text-sub{
+          font-size: 25px;
+          text-align: center;
+        }
+        .sec7-text-cont-sub{
+          font-size: 20px;
+        }
+        .sec7-list-text{
+          font-size: 20px;
+          padding-top: 10px;
+        }
+        .sec9-text-title{
+          margin-top: 20px;
+          font-size: 23px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: black;
+        }
+        .sec9-text-con{
+          font-size: 20px;
+        }
+        .sec11-text-title{
+          font-size: 25px;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .sec20-text-cont-sub{
+          font-size: 25px;
+          color: #000;
+        }
+        .sec20-text-list li{
+          font-size: 25px;
+          color: #000;
+          list-style-type: square;
+          padding-top: 10px;
+        }
+        input.is-invalid~.form-check-label{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+<div class="lesson_5">
+    <!-- top section -->
+    <section id="setion1">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_content_one">
+                    <div class="row" style="margin-top: 150px;">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-8">
+                          <p class="section1-text-title">
+                            Theories, Models and Economics as Science
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2-->
+    <section id="setion2">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h1 class="sec2-text-title">Why are we doing this?</h1>
+
+                        <!-- <img src="./ECONS1U1L2Image1.png" style="width:100%;text-align: center;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOTKZL8yeeAVzZxfsPuKKCTY8rvO3SyiWzGiewV7ykJPdpTybcFzrjRF2RMIucwXR6A8jwpgWBwL5SociDZrZMVipy22mA=w1338-h1800" style="width:100%;text-align: center;">
+
+                        <p class="sec2-text-sub">Have you asked yourself, "what's the point of learning about economics?" Or more broadly, "what’s the point of studying anything?</p>
+                        <p class="sec2-text-sub">Well, like physics, biology, or chemistry, economics attempts to explain what is observed in nature in such a way as to allow people to make informative statements about how the world works.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3-->
+    <section id="setion3">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top3_content_one">
+                    <div class="row">
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-5" style="padding:0px">
+                        <div class="sec3-bg-text-title">
+                          <h1 class="sec3-text-title">Lesson<br>Expectations</h1>
+                        </div>
+                        <div class="sec3-bg-sub-text-title">
+                          <p class="sec3-title-text-sub">By the end of this lesson, you should be able to</p>
+                          <ul class="sec3-text-list">
+                            <li>Describe the concepts of theory and model,</li>
+                            <li>Identify the purpose of.</li>
+                            <li>Economic Theories.</li>
+                            <li>Models</li>
+                            <li>Differentiate between "what is" and "what should be.</li>
+                            <li>Define.</li>
+                            <li>Empirical Science.</li>
+                            <li>Ethics.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-5" style="padding:0px">
+                        <div class="sec3-bg2-text-title">
+                          <h1 class="sec3-text-title">Lesson<br> Keywords</h1>
+                        </div>
+                        <div class="sec3-bg-sub2-text-title">
+                          <p class="sec3-title2-text-sub">Models.</p>
+                          <p class="sec3-title2-text-sub">Scientific Method.</p>
+                          <p class="sec3-title2-text-sub">Social Science.</p>
+                          <p class="sec3-title2-text-sub">Theories.</p>
+                          <p class="sec3-title2-text-sub">What Should Be.</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 4-->
+    <section id="setion4">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top4_content_one">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <!-- <img src="./ECONS1U1L2Image2.png" style="width: 100%;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQmMFsEgq2ta_iLDD7qe4ESzNcvtdulQrJ6nE3RmWZF7dMt8rMNzPSvXL5c3doK18M-knjXFDeFwWMOvzG3Oyy9mqI5Vg=w1338-h1800" style="width: 100%;">
+                      </div>
+                      <div class="col-lg-6">
+                       <h1 class="sec4-text-title">Where it Began</h1>
+                       <p class="sec4-text-sub">
+                        Take a step back. How did we discover gravity? Isaac Newton was theorizing the physical nature of gravity hundreds of years ago and discovered gravity when he was hit on the head with an apple while sitting under a tree.</p>
+                      
+                      <p class="sec4-text-sub">
+                        Does gravity exist everywhere? Experiments later verified that it does, but experiments also verified that gravity is different at high altitudes, sea level, and in space.
+                      </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 5-->
+    <section id="setion5">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top5_content_one">
+                    <div class="row">
+                      <div class="col-lg-6">
+                       <h1 class="sec4-text-title">Purpose of Experiments</h1>
+                       <p class="sec4-text-sub">
+                        The purpose of an experiment is to test a hypothesis (an explanation or idea for why something happens or works) to see if it is true or not. Based on the experiment, the data is collected and reviewed and conclusions are formed. A hypothesis must be tested multiple times, by different scientists and different conditions in order to become a theory.</p>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORMUqUa40yFn-CvwlYf1ZW6xA7_Rnn-mwtW5Ib7otyKuSDrR00cMwi3YU_t_P70zbi8s4nXigX6mBjVy0oHwMbhjqjQRQ=w1338-h1800" style="width: 100%;">
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 6-->
+    <section id="setion6">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top4_content_one">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <!-- <img src="./ECONS1U1L2Image4.png" style="width: 100%;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQCYen8FI-iSIqSLmQCL79nG3NbXonLbe5lD6c_5PH2LosmWkJdp5jT-oMI1VsVb10MVCo4UbAMwqQmGtXgogKFOR0Lig=w1338-h1800" style="width: 100%;">
+                      </div>
+                      <div class="col-lg-6">
+                       <h1 class="sec4-text-title">Models</h1>
+                       <p class="sec4-text-sub">
+                        A model is a way to display abstract, often complex data and represent it in a logical and digestible way. Often times this is done visually through schematics and graphs or through mathematical formulas.</p>
+                      </div>
+                    </div>
+                    <div class="row mt-5">
+                      <div class="col-lg-6">
+                        <!-- <img src="./ECONS1U1L2Image5.png" style="width: 100%;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQffxp05A4g7FxZ0AbHvTmXxCp7UzHYQ36Zm8dYo3HNrWPewJShPwnVrIxtvgw0UrLwl4TxLsATNN7OBqKQDknfXb-T=w1338-h1800" style="width: 100%;">
+                      </div>
+                      <div class="col-lg-6 mt-3">
+                       <p class="sec4-text-sub">
+                        Examine the visual model of the Earth’s atmospheric composition.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 7-->
+    <section id="setion7">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top5_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h1 class="sec2-text-title">Understanding the Scientific Method</h1>
+                        <p class="sec7-text-sub">Answer the next pop quiz reading the next lecture</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <p class="sec7-text-cont-sub">
+                          Economics is the social science that studies the production, distribution, and consumption of goods and services. The term economics comes from the Greek for oikos (house) and nomos (custom or law). Literally, economics consists of "rules of the household." As social scientists, economists attempt to describe human behavior, although like physical scientists, economists utilize a myriad of mathematical techniques to rigorously test theories
+                        </p>
+
+                        <p class="sec7-text-cont-sub"><b>Select the correct option for each question below</b></p>
+                        <p class="sec7-text-cont-sub"><b>1) What is Economics?</b></p>
+                        <ul style="list-style: none;">
+                          <li class="sec7-list-text">A) Is the social science that studies the production, distribution, and consumption of goods and services.</li>
+                          <li class="sec7-list-text">B) Are a very wide range of human practices of creative expression, storytelling and cultural participation.</li>
+                          <li class="sec7-list-text">C) Is the activity, set of institutions, and processes for creating, communicating, delivering, and exchanging offerings that have value for customers, clients, partners, and society at large.</li>
+                        </ul>
+                        <p class="sec7-text-cont-sub"><b>2) The term economics comes from the Greek for:</b></p>
+                        <ul style="list-style: none;">
+                          <li class="sec7-list-text">A) Beta and alpha.</li>
+                          <li class="sec7-list-text">B) Oikos and nomos.</li>
+                          <li class="sec7-list-text">C) Epsilon and sigma.</li>
+                        </ul>
+                        <p class="sec7-text-cont-sub"><b>3) The Economics consists of:</b></p>
+                        <ul style="list-style: none;">
+                          <li class="sec7-list-text">A) Rules of the HouseholdN.</li>
+                          <li class="sec7-list-text">B) Dedication and Power.</li>
+                          <li class="sec7-list-text">C) Science and Economy.</li>
+                        </ul>
+                        <p class="sec7-text-cont-sub"><b>3) Economists utilize a myriad of mathematical techniques to:</b></p>
+                        <ul style="list-style: none;">
+                          <li class="sec7-list-text">A) To do Experiments with Science.”</li>
+                          <li class="sec7-list-text">B) Rigorously Test Theories.</li>
+                          <li class="sec7-list-text">C) Test the Human Behavior.</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 8-->
+    <section id="setion8">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top4_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec2-text-title">The Scientific method</h1>
+                      </div>
+                      <div class="col-lg-12">
+                        <p class="sec7-text-cont-sub">
+                          We've already discussed the development of theories and models from these theories. The process of experimentation is done in such a way as to allow other researchers the opportunity to replicate the results of prior researchers. This is called the Scientific Method. The graphic just to our left illustrates this method.
+                        </p>
+                      </div>
+                      <div class="col-lg-12">
+                        <!-- <img src="./ECONS1U1L2Image6.png" style="width: 100%;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORsZRgjtvIE0rZCJ1feIX9PC11ENR13eSb45jnm4KNquUPIkQpjCXMWalEMkHAY9RjE1-wSChscTy49Oz-5kYri_J6GvQ=w1338-h1800" style="width: 100%;">
+                         <p class="sec7-text-cont-sub pt-4">
+                          The scientific method is a process of experimentation done in such a way as to allow other researchers the opportunity to replicate the results.
+                        </p>
+                      </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- section 9-->
+    <section id="setion9">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top5_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h1 class="sec2-text-title">Process of the Scientific Method</h1>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">Observation</h1>
+                        <p class="sec9-text-con">An idea,theory,problem or supposition should be formulated as a question to be addressed through a well-defined process in an attempt to prove or disprove the issue.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">RESEARCH</h1>
+                        <p class="sec9-text-con">Research the subject and observe what could be the cause or causes of the problem and identify or develop a number of solutions.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">HYPOTHESIS</h1>
+                        <p class="sec9-text-con">Outline the best options from your observations or past experiences or previous reports and make an educated guess about the cause and effect of a particular situation or set of factors that can be tested and proven right or wrong.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">THINK!</h1>
+                        <p class="sec9-text-con">Evaluate and think about the issue again, do some more research and start over with a new hypothesis.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">EXPERIMENT</h1>
+                        <p class="sec9-text-con">Social sciences such as economics must rely on data gathered from human subjects, such as from interviews,surveys or direct observation of the human participants in a controlled and sometimes uncontrolled environment or set of circumstances. These tests, surveys and experiments must be repeated with a number of other groups to verify findings.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">ANALYSIS</h1>
+                        <p class="sec9-text-con">Summarize your results and conclusions representing them in a number of ways such as a graph, charts, and written reports. Be sure to refer back to your data and observations.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">HYPOTHESIS IS TRUE</h1>
+                        <p class="sec9-text-con">Do the results support the experimental hypothesis? If so, some of the conclusions reached may be the answer to the problem.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">COMMUNICATE</h1>
+                        <p class="sec9-text-con">Discuss how the results apply to “real world” issues and indicate any other experiments that may be conducted to support the conclusions given in the report.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h1 class="sec9-text-title">HYPOTHESIS IS FAKE</h1>
+                        <p class="sec9-text-con">Unsuccessful experiments provide information that can lead to solutions by eliminating certain options that are not beneficial to resolving the problem.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- section 10-->
+    <section id="setion10">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top4_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec2-text-title">Steps in the Process</h1>
+                      </div>
+                      <div class="col-lg-12 mt-3">
+                        <!-- <img src="./ECONS1U1L2Image7.png" style="width: 100%;"> -->
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOToNop6fwEz8UCbi_cH9sCy1dXsiOy4wTX-iMQONUxyhB_VK350ufuuHnJIbbwpuQt9IZtWRNzgtDWZu3sGUOVvwd17_A=w1338-h1800" style="width: 100%;">
+                      
+                      </div>
+                      <div class="col-lg-12 mb-3">
+                        <li class="sec7-text-cont-sub pt-4">
+                         Does smoking cause cancer? Is poverty caused by a lack of education? How much should the Federal Reserve cut inflation rates in order to stimulate economic growth?
+                        </li>
+                        <li class="sec7-text-cont-sub pt-4">
+                         A good researcher will conduct some background research and develop a hypothesis, a detailed opinion, to put his or her question into more focus.” “Smoking two packs of cigarettes per day for 25 years may cause cancer in 80% of the population. Failure to complete the 10th grade increases the probability that one will be poor by 90%
+                        </li>
+                        <li class="sec7-text-cont-sub pt-4">
+                         When the Federal Reserve cuts interest rates by more than 10% from previous levels, economic growth is stifled. Do you see how these statements are very specific? Researchers turn these statements into tailored questions to permit formal research to take place, hoping to develop proof to support their claims.
+                        </li>
+                        <li class="sec7-text-cont-sub pt-4">
+                        For example, instead of stating that smoking two packs of cigarettes per day for 25 years may cause cancer in 80% of the population, ask "Does smoking two packs of cigarettes per day for 25 years cause cancer in 80% of the population?
+                        </li>
+                      </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 11-->
+    <section id="setion11">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">Two Important Points about <br> Conducting Research</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 12-->
+    <section id="setion12">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top12_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <p class="sec7-text-cont-sub pt-4">
+                          Two things are most important to be mindful of when conducting research. First, we must delineate WHAT SHOULD BE with WHAT IS. Second, scientific reporting should always be ethical. Sometimes in their zeal to advance a particular point of view or opinion, researchers do not report accurate findings.
+                         </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 13-->
+    <section id="setion13">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">Should vs. Is</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- section 14-->
+    <section id="setion14">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top12_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <p class="sec7-text-cont-sub pt-4">
+                         In regard to the first point: What’s the difference between the words "should" and "is?" "Should" explains the way things would be in an ideal state. Just because things should be one way or another does not mean they are. "Is" explains how things actually are. Every subject discipline has its own lingo or code words, and within economic lingo, statements that say what should be are called normative statements. Statements that say what is are called positive statements.
+                         </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 15-->
+    <section id="setion15">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">Unbiased Results</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 16-->
+    <section id="setion16">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top12_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <p class="sec7-text-cont-sub pt-4">
+                        Even though researchers try to eliminate bias from their research, it is possible that a study may be biased without the researcher realizing. That is why it is important to be able to identify types of bias and how to avoid them. There are many types of bias, including systematic bias, selection bias, and confirmation bias. Watch this short video on how to avoid bias in research. In your notes, write down the types of bias mentioned and ways they can be avoided. Then think about this-- why do you think it is important that research results are unbiased?
+                         </p>
+
+                         <div class="ratio ratio-16x9">
+                            <video class="video-fluid" loop controls>
+                                <source src="Https://m.fyioc.com/Spanish1/Lesson28/L28V1-REV5.mp4" type="video/mp4" />
+                            </video>
+                            <div class="play_button">
+                                <div id="play_vid">
+                                    <span class="material-icons-outlined">play_arrow</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 17-->
+    <section id="setion17">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">False Evidence</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 18-->
+    <section id="setion18">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top12_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <p class="sec7-text-cont-sub pt-4">
+                        In 2007, a Korean researcher falsely claimed to have developed a way to clone human beings. In the 1980s, scientists claimed to develop a way to initiate cold fusion, a type of extremely efficient chemical reaction. No matter the personal agenda, if scientific findings are misstated, we as a species are irreparably harmed in evolving intellectually. Real science should be able to be replicated so that science evolves to develop discoveries and inventions that improve lives.
+                         </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 19-->
+    <section id="setion18">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">SUMMARY</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- section 20-->
+    <section id="setion20">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top20_content_one">
+                    <div class="row">
+                      <div class="col-lg-6">
+                         <p class="sec20-text-cont-sub">
+                          In this lesson you have covered:
+                         </p>
+                          <ul class="sec20-text-list">
+                            <li>The concepts of theory and model.</li>
+                            <li>The purposes of economic theories and models.</li>
+                            <li>The difference between "what is" and "what should be.</li>
+                            <li>The meaning of empirical science and ethics.</li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 21-->
+    <section id="setion21">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top11_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <h1 class="sec11-text-title">ASSIGNMENTS</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 21-->
+    <section id="setion21">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top12_content_one">
+                    <div class="row">
+                      <div class="col-lg-12">
+                         <p class="sec7-text-cont-sub pt-4">
+                          The importance of the economics of science is substantially due to the importance of science as a driver of technology and technology as a driver of productivity and growth. Believing that science matters, economists have attempted to understand the behavior of scientists and the operation of scientific institutions. One goal is to see how far science can be understood as a market, and how far the market for science and scientists can be understood as efficient. When inefficiency is found, a related goal is to propose changes in resource levels or incentives, to increase the speed of scientific advance.
+                         </p>
+
+                         <p class="sec7-text-cont-sub pt-4">
+                            Choose the correct answer:
+                         </p>
+                        <p class="sec7-text-cont-sub">1)  ______ ,Economists have attempted to understand the behavior of scientists and the operation of scientific institutions.</p>
+                        <ul style="list-style: none;">
+                          <li class="sec7-list-text"> <div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="yes" id="practice1">
+                                <label class="form-check-label sect5-text-sub" for="practice1">A) True</label>
+                            </div></li>
+                          <li class="sec7-list-text"><div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice1">
+                                <label class="form-check-label sect5-text-sub" for="practice1">B) False</label>
+                            </div></li>
+                        </ul>
+                        <p class="sec7-text-cont-sub">2)  ______ ,One goal is to see how far science can be understood as a market.</p>
+                        <ul style="list-style: none;">
+                           <li class="sec7-list-text"> <div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="yes" id="practice2">
+                                <label class="form-check-label sect5-text-sub" for="practice2">A) True</label>
+                            </div></li>
+                          <li class="sec7-list-text"><div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice2">
+                                <label class="form-check-label sect5-text-sub" for="practice2">B) False</label>
+                            </div></li>
+                        </ul>
+                        <p class="sec7-text-cont-sub">3)  ______ ,Economics of science is substantially due to the importance of science as a driver of technology and technology as a driver of power and the future.</p>
+                        <ul style="list-style: none;">
+                           <li class="sec7-list-text"> <div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice3">
+                                <label class="form-check-label sect5-text-sub" for="practice3">A) True</label>
+                            </div></li>
+                          <li class="sec7-list-text"><div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="yes" id="practice3">
+                                <label class="form-check-label sect5-text-sub" for="practice3">B) False</label>
+                            </div></li>
+                        </ul>
+                        <p class="sec7-text-cont-sub">4) The Scientists and Economists don’t get along.they hate each other.</p>
+                        <ul style="list-style: none;">
+                            <li class="sec7-list-text"> <div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice4">
+                                <label class="form-check-label sect5-text-sub" for="practice4">A) True</label>
+                            </div></li>
+                          <li class="sec7-list-text"><div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice4">
+                                <label class="form-check-label sect5-text-sub" for="practice4">B) False</label>
+                            </div></li>
+                        </ul>
+                        <p class="sec7-text-cont-sub">5) a related goal is to propose changes in resource levels or incentives, to increase the speed of scientific advance.</p>
+                        <ul style="list-style: none;">
+                            <li class="sec7-list-text"> <div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="yes" id="practice5">
+                                <label class="form-check-label sect5-text-sub" for="practice5">A) True</label>
+                            </div></li>
+                          <li class="sec7-list-text"><div class="form-check">
+                                <input class="form-check-input sect5-text-sub" type="checkbox" data-value="no" id="practice5">
+                                <label class="form-check-label sect5-text-sub" for="practice5">B) False</label>
+                            </div></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+		<!-- Assessment Quiz -->
+        <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto;" border="1" cellpadding="20">
+            <tbody>
+            <tr>
+            <td style="background-color: white; width: 710px; ">
+            <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+            <p><a:question index="1" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="2" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="3" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="4" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="5" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="6" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="7" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="8" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="9" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="10" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="11" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="12" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="13" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="14" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="15" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="16" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="17" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="18" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="19" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="20" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            </td>
+            </tr>
+            </tbody>
+        </table>
+            <!-- Assessment Quiz -->
+</div> 
+    <!-- js functions -->
+     <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script>
+       const checkList10 = document.querySelectorAll('#practice1,#practice2,#practice3,#practice4,#practice5');
+
+        checkList10.forEach(function(elem, index){
+
+            elem.addEventListener("click", function(event){
+
+                if(elem.checked){
+
+                    if(event.target.getAttribute('data-value') == "yes"){
+                        elem.classList.remove('is-invalid');
+                        elem.classList.add('is-valid');
+                    }
+
+                    if(event.target.getAttribute('data-value') == "no"){
+                        elem.classList.remove('is-valid');
+                        elem.classList.add('is-invalid');
+                    }
+
+                } else {
+                    elem.classList.remove('is-valid');
+                    elem.classList.remove('is-invalid');
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
